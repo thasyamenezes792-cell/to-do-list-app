@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>To-Do List Interaktif</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="container">
+<header class="app-header">
+<h1>To‑Do List Interaktif</h1>
+<p class="subtitle">Tambah, tandai selesai, dan hapus tugas. (HTML, CSS, JavaScript murni)</p>
+</header>
+
+
+<section class="input-area" aria-labelledby="form-title">
+<h2 id="form-title" class="visually-hidden">Form Tambah Tugas</h2>
+<form id="todo-form" autocomplete="off">
+<label for="todo-input" class="visually-hidden">Masukkan tugas baru</label>
+<input id="todo-input" name="todo" type="text" placeholder="Tulis tugas baru..." required />
+<button type="submit" id="add-btn">Tambah</button>
+</form>
+<p id="error" class="error" aria-live="polite"></p>
+</section>
+
+
+<section class="list-area" aria-labelledby="list-title">
+<h2 id="list-title">Daftar Tugas</h2>
+<ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+<p id="empty" class="empty">Belum ada tugas. Tambah tugas baru di atas.</p>
+</section>
+
+
+<footer class="app-footer">
+<small>File tugas: <code>index.html</code> • <code>style.css</code> • <code>script.js</code></small>
+</footer>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
